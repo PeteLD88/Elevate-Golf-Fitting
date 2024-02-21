@@ -1,35 +1,33 @@
-import React from 'react'
-import Footer from './footer'
-import Nav from './nav'
+import React from "react";
+import Footer from "./footer";
+import Nav from "./nav";
 
 function Home() {
-    return (
-        <div
+  return (
+    <div
       id="LoadingPage"
       className="font-josefin flex flex-col min-h-screen w-full items-center"
     >
       <Nav />
       <div
         id="HERO"
-        className="flex flex-col justify-center items-center w-full bg-cover bg-center py-40 px-40"
-        style={{
-          backgroundImage:
-            "url('https://file.rendit.io/n/N9aDZ4YUrQ0paGPyKQfs.png')",
-        }}
+        className="flex flex-col justify-center items-center w-full bg-cover bg-center py-40 px-40 relative"
       >
-        <div className="text-center text-3xl md:text-[90px] leading-tight text-[#75ff52] max-w-7xl">
+        <img src='https://i.ibb.co/Hg9S3zd/20130930-club-fitting-golf-learning-center-craig-allan-0061-Retouch.jpg'
+        className="w-full h-full object-cover absolute opacity-30"/>
+        <div className="text-center text-3xl md:text-[90px] leading-tight text-[#75ff52] max-w-7xl relative">
           ELEVATE YOUR GOLF GAME
         </div>
-        <div className="my-6 text-center text-3xl md:text-[80px] leading-tight text-[#75ff52] max-w-3xl">
+        <div className="my-6 text-center text-3xl md:text-[80px] leading-tight text-[#75ff52] max-w-3xl relative">
           WITH
         </div>
-        <div className="text-center text-3xl md:text-[75px] leading-tight text-[#75ff52] max-w-6xl">
+        <div className="text-center text-3xl md:text-[75px] leading-tight text-[#75ff52] max-w-6xl relative">
           EXPERT EQUIPMENT FITTING
         </div>
-        
+
         <button
           id="Button3"
-          className="mt-20 text-center text-xl md:text-5 xl font-bold text-[#17152b] bg-[rgba(117,_255,_82,_0.7)] flex justify-center items-center md:py-5 px-7 w-100 cursor-pointer transition-all ease-in-out duration-300 hover:bg-[#75ff52] rounded-full"
+          className="relative mt-20 text-center text-xl md:text-5 xl font-bold text-[#17152b] bg-[rgba(117,_255,_82,_0.7)] flex justify-center items-center md:py-5 px-7 w-100 cursor-pointer transition-all ease-in-out duration-300 hover:bg-[#75ff52] rounded-full"
         >
           GET STARTED
         </button>
@@ -73,7 +71,7 @@ function Home() {
       </div>
       <Footer />
     </div>
-        )
-    }
-    
-    export default Home
+  );
+}
+
+export default Home;
