@@ -1,8 +1,7 @@
-import React from "react";
-import Footer from "./footer";
-import Nav from "./nav";
+import Footer from "./Footer";
+import Nav from "./Nav";
 
-function Home() {
+export default function HomePage() {
   return (
     <div
       id="LoadingPage"
@@ -27,23 +26,27 @@ function Home() {
 
         <button
           id="Button3"
-          className="relative mt-20 text-center text-xl md:text-5 xl font-bold text-[#17152b] bg-[rgba(117,_255,_82,_0.7)] flex justify-center items-center md:py-5 px-7 w-100 cursor-pointer transition-all ease-in-out duration-300 hover:bg-[#75ff52] rounded-full"
+          className="relative mt-20 text-center text-xl md:text-5 xl font-bold text-[#17152b] bg-[rgba(117,_255,_82,_0.7)] border-2 border-[#75ff52] flex justify-center items-center md:py-5 px-7 w-100 cursor-pointer transition-all ease-in-out duration-300 hover:bg-[#75ff52] rounded-full"
         >
           GET STARTED
         </button>
       </div>
-      <div id="HeroV" className="w-full px-8 py-20">
-        <div className="flex flex-col md:flex-row justify-between items-stretch">
+      <div id="HeroV" className="w-full px-8 py-20 bg-cover bg-center" style={{backgroundImage: "url(https://i.ibb.co/KDyQX8n/Homebg2.png)"}}>
+        <div className="flex flex-col md:flex-row justify-around">
           <img
+            className="relative w-[1184px] h-[667px]"
             src="https://file.rendit.io/n/XOP5eTSpskOUxwLD9K79.png"
-            alt="Online Fitting"
-            className="md:max-w-none"
           />
-          <div className="flex flex-col justify-center text-[#75ff52] gap-y-20 max-w-xl">
-            <h3 className="text-2xl md:text-6xl font-bold leading-tight">
-              What is the benefit of Online Fitting?
-            </h3>
-            <p className="text-sm md:text-xl leading-normal bg-gradient-to-b p-4">
+          <div className="w-[600px] flex flex-col justify-center text-[#75ff52]">
+            <h1 className="text-7xl font-extrabold leading-tight">
+              What is the
+            </h1>
+            <h1 className="text-7xl font-extrabold leading-tight">
+              benefit of
+            </h1><h1 className="mb-10 text-7xl md:text-6xl font-extrabold leading-tight">
+              Online Fitting?
+            </h1>
+            <p className="mb-8 md:text-2xl leading-normal bg-gradient-to-b p-4">
               With online golf fitting, you can undergo the fitting process from
               the comfort of your own home or wherever you have internet access.
               This eliminates the need for in-person appointments and travel,
@@ -55,7 +58,7 @@ function Home() {
             <div className="flex flex-row gap-4 w-full md:w-auto">
               <button
                 id="PrimaryButton"
-                className="shadow-lg bg-[#75ff52] flex items-center justify-center py-2 md:py-3 px-4 md:px-6 w-full md:w-auto text-sm md:text-base font-semibold text-[#17152b] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#75ff52] hover:border hover:border-[#75ff52] rounded-full"
+                className="bg-[#75ff52] border border-[#75ff52] flex items-center justify-center py-2 md:py-3 px-4 md:px-6 w-full md:w-auto text-sm md:text-base font-semibold text-[#17152b] transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#75ff52] hover:border hover:border-[#75ff52] rounded-full"
               >
                 Get started
               </button>
@@ -73,5 +76,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

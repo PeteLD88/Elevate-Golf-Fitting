@@ -1,32 +1,31 @@
-import React from "react";
-import Footer from "./footer";
-import Nav from "./nav";
+import Footer from "./Footer";
+import Nav from "./Nav";
 
-function AboutUs() {
+export default function AboutUsPage() {
   return (
     <div
       id="AboutUsPage"
       className="font-josefin flex flex-col min-h-screen w-full items-center"
     >
       <Nav />
-      <main className="py-16">
+      <main className="bg-cover bg-center" style={{backgroundImage: "url(https://i.ibb.co/NxKq5MG/Screenshot-2024-02-25-022406.png)"}}>
         <div className="max-w-8xl mx-auto px-4">
           <div className="grid grid-cols-2">
             <div>
               <img
                 src="https://file.rendit.io/n/NNXG74SySO27LKpDnxjX.png"
-                className="rounded-l"
+                className="w-[820px] pt-16 rounded-l relative"
               />
               <img
                 src="https://file.rendit.io/n/E8w6NOkS4DOVCSlIWmok.png"
-                className="rounded-l mt-6"
+                className="w-[820px] rounded-l my-10 relative"
               />
             </div>
             <div>
-              <h2 className="text-8xl font-bold mb-6 text-[#75ff52]">
-                Who are We?
+              <h2 className="pt-16 relative text-8xl font-bold mb-20 text-[#75ff52]">
+                Who are we?
               </h2>
-              <p className="text-4xl py-36 mr-24 text-[#75ff52]">
+              <p className="relative text-4xl py- mr-24 text-[#75ff52]">
                 At Elevate Golf Fitting, we understand the importance of having
                 properly fitted golf equipment to enhance your game. Our team of
                 experienced golf professionals is dedicated to providing you
@@ -52,5 +51,3 @@ function AboutUs() {
     </div>
   );
 }
-
-export default AboutUs;

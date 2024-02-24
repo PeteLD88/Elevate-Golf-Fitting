@@ -24,7 +24,7 @@ function Nav() {
           </button>
           <button
             id="Button2"
-            className="text-2xl text-[#17152b] bg-[#75ff52] flex justify-center items-center py-5 px-12 w-50 cursor-pointer transition-all ease-in-out duration-300 hover:bg-transparent hover:text-[#75ff52] rounded-full"
+            className="text-2xl text-[#17152b] border-2 border-[#75ff52] bg-[#75ff52] flex justify-center items-center py-4 px-12 w-50 cursor-pointer transition-all ease-in-out duration-300 hover:bg-transparent hover:border-2 hover:border-[#75ff52] hover:text-[#75ff52] rounded-full"
           >
             LOG IN
           </button>
